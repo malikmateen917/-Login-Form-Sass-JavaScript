@@ -1,0 +1,212 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: arial;
+    
+  }
+  
+  .form{
+    display: inline-block;
+    position: relative;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%,-50%);
+    height: 250px;
+    width: 600px;
+    box-shadow: 0 3px 11px rgba(0,0,0,0.5);
+    
+    .shape1,.shape2{
+      display: inline-block;
+      position: absolute;
+      background-color: rgba(213,45,34,0.7);
+      width: 200px;
+      height: 200px;
+      top: 10%;
+      left: 40%;
+    clip-path: polygon(49% 45%, 98% 7%, 95% 81%, 16% 98%, 0 23%);
+    }
+    
+    .shape2{
+      transform: rotate(30deg);
+      background-color: rgba(34,5,234,0.7);
+      clip-path: polygon(25% 0%, 82% 6%, 98% 60%, 3% 94%);
+      left: 25%;
+      top: 10%;
+    }
+  }
+  
+  .shape{
+    transition: clip-path 0.4s ease-in-out;
+  }
+  
+  .cta{
+    display: inline-block;
+    position: absolute;
+    z-index: 10;
+    background-color: rgb(100,100,100);
+    height: 400px;
+    width: 250px;
+    top: -30%;
+    left: 50%;
+    transition: all 0.3s ease-in;
+    padding: 40px;
+   
+    .cta__heading {
+      position: absolute;
+      top: 20%;
+      color: white;
+    }
+     .cta__text{
+      position: absolute;
+      color: white;
+      font-size: 12px;
+      top: 45%;
+    }
+  }
+  
+  .login__form {
+    position: absolute;;
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+   
+    &.register{
+      transform: translateX(100%);
+    } 
+  }
+  
+  .container {
+    display: inline-block;
+    position: relative;
+    height: 120px;
+    padding-top: 10px;
+    left: 50%;
+    width: 90%;
+    transform: translate(-50%,60%);
+      
+    &.cont__login{
+      padding-top: 20px
+    }
+  
+      .input {
+      position: absolute;
+      left: 50%;
+      transform:translateX(-50%);
+      border: none;
+      height: 25px;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+      padding: 4px 10px;
+        
+        &:active{
+          
+        }
+        
+        &.password{
+          transform: translate(-50%,130%);
+          
+          &.pwtwo{
+            transform: translate(-50%, 260%)
+          }
+        }
+      }
+    .btn{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      display: inline-block;
+      border: none;
+      margin: 0;
+      text-decoration: none;
+      padding: 3px 10px;
+      border-radius: 2px 7px;
+      border: 1px solid rgba(100,100,100,0.7);
+      background-color: white;
+      transition: all 0.4s ease;
+      cursor: pointer;
+      
+      &:focus{ 
+        outline:none;
+      }
+      
+      &.btn__login{
+        transform: translate(-50%, 40px);
+        
+        &:hover{
+          border-radius: 0;
+          box-shadow: 0 2px 3px rgba(0,0,0,0.4);
+          padding: 3px 15px;
+  
+        }
+        
+        &:active{
+          box-shadow: 0 1px 1px rgba(0,0,0,0.4);
+        }
+      }
+  
+      
+      &.btn__register{
+        transform: translate(-50%, 60px);
+           &:hover{
+          border-radius: 0;
+          box-shadow: 0 2px 3px rgba(0,0,0,0.4);
+          padding: 3px 15px;
+  
+        }
+        
+        &:active{
+          box-shadow: 0 1px 1px rgba(0,0,0,0.4);
+        }
+      }
+    }
+  }
+  
+  .showRegister{
+    left: 50%;
+    transform: translateX(-100%);
+  }
+  
+  
+  .cta__btn{
+      position: absolute;
+      display: inline-block;
+      border: none;
+      margin: 20px 0;
+      text-decoration: none;
+      padding: 3px 10px;
+      border-radius: 4px 15px;
+      border: 1px solid white;
+      background-color: transparent;
+      color: white;
+      transition: all 0.4s ease;
+      cursor: pointer;
+      left: 50%;
+      top: 60%;
+      transform: translateX(-50%);
+      width: 80%;
+    
+    &:focus{
+      outline: none;
+    }
+    
+    &:hover{
+          border-radius: 0;
+          box-shadow: 0 2px 3px rgba(0,0,0,0.4);
+          padding: 3px 15px;
+  
+        }
+        
+        &:active{
+          box-shadow: 0 1px 1px rgba(0,0,0,0.4);
+        }
+  }
+  
+  .cta__btn:hover{
+    background-color: rgb(50,50,50);
+    border-radius: 0;
+  }
+  
+   
+    
+  
+  
